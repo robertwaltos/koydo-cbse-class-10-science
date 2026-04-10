@@ -1,0 +1,45 @@
+// CBSE Class 10 Science Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM186",
+  slug: "cbse-class-10-science",
+  name: "CBSE Class 10 Science",
+  fullName: "CBSE 10 Science",
+  alias: "CBSE 10 Science",
+  family: "CBSE",
+  category: "School exams",
+  subcategory: "Subject exam",
+  country: "India",
+  region: "South Asia",
+  languages: ["English","Hindi"],
+  estimatedAnnualTakers: "very high",
+  testingWindow: "Feb-Mar",
+  schedulePattern: "Annual",
+  ageGroup: "14-16",
+  targetUser: "School student",
+  delivery: "Paper-based",
+  questionTypes: ["Objective + subjective"],
+  adaptivity: "Linear",
+  sections: "Single subject",
+  scoringMode: "Marks/grades",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "school_science",
+  uiEngine: "paper_structured_response",
+  monetizationPotential: "Very High",
+  tier: "Tier 2",
+  launchWave: "Wave 3",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "High",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
