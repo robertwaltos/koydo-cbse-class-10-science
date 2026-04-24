@@ -20,7 +20,7 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
+  minQuestionCount: number;
   activityTypes: ActivityType[];
 }
 
@@ -44,7 +44,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Mathematics",
     icon: "🔢",
     color: "#1E40AF",
-    questionTarget: 800,
+    minQuestionCount: 800,
     activityTypes: ["multiple_choice", "whiteboard", "numeric_input"],
   },
   {
@@ -53,7 +53,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Sciences",
     icon: "🔬",
     color: "#059669",
-    questionTarget: 700,
+    minQuestionCount: 700,
     activityTypes: ["multiple_choice", "reading_passage"],
   },
   {
@@ -62,7 +62,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Language & Literature",
     icon: "📖",
     color: "#D97706",
-    questionTarget: 600,
+    minQuestionCount: 600,
     activityTypes: ["multiple_choice", "essay", "cloze_deletion"],
   },
   {
@@ -71,8 +71,9 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Social Studies",
     icon: "🌍",
     color: "#DC2626",
-    questionTarget: 500,
+    minQuestionCount: 500,
     activityTypes: ["multiple_choice"],
   }
   ],
 };
+
